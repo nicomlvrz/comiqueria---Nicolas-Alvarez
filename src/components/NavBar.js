@@ -1,3 +1,4 @@
+import CartWidget from "./CartWidget";
 const NavBar = () => {
     return <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
@@ -11,6 +12,7 @@ const NavBar = () => {
         <a class="navbar-brand" href="pages/live.html">Mangas</a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-dark bg-black">
         </ul>
+        <CartWidget />
       </div>
     </div>
   </nav>
