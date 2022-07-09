@@ -3,10 +3,15 @@ import {useState} from "react";
 const ItemCount = ({ stock, initial, onAdd }) => {
     const [count, setCount] = useState(initial);
     const incrementar = () => {
+        if(count < stock) {
         setCount(count + 1);
+        }
+        else{
+            alert("No hay sufciente stock")
+        };
     };
     const decrementar = () => {
-        if(count > 0) {
+        if(count > 1) {
         setCount(count - 1);
        };
     };

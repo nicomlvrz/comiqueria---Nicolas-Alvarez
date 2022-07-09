@@ -4,7 +4,7 @@ const ItemListContainer = ({greeting}) => {
     return(
         <div>
             {greeting}
-            <ItemCount stock={5} initial={1} onAdd={(n) => alert(`agregados ${n} productos`)}  />
+            <ItemCount stock={5} initial={1} onAdd={(n) => alert(`Agregados ${n} productos al carrito`)}  />
         </div>
     );
 };
